@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><Profile-card></Profile-card></title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .profile-card {
+      background-color: cornsilk;
+      border-radius: 8px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      width: 300px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .profile-card:hover {
+      transform: scale(1.05);
+    }
+
+    .profile-header {
+      background-color: palevioletred;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .profile-photo {
+      border-radius: 50%;
+      margin-bottom: 10px;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 4px solid #fff;
+    }
+
+    .profile-info {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .profile-info h1 {
+      margin-top: 0;
+      font-size: 1.5em;
+    }
+
+    .profile-job-info p {
+      margin: 10px 0;
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <div class="profile-header">
+      <img class="profile-photo" src="profilepic.png" alt="Profile Photo">
+      <h1>Dakshayani</h1>
+      <p>Web Developer</p>
+    </div>
+    <div class="profile-job-info">
+      <p>Employee ID: WD1234</p>
+      <p>Department: Web Development</p>
+      <p>Description: Full-stack web developer with expertise in front-end and back-end technologies.</p>
+    </div>
+  </div>
+
+</body>
+</html>
